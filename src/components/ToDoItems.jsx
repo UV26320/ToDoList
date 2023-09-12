@@ -1,19 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 
 function ToDoItems(props) {
-  const [isDone, setIsDone] = useState(false);
-
   return (
     <div
-      onClick={() => {
-        setIsDone((prevValue) => {
-          return !prevValue;
-        });
+      onClick={() => {                     // executed when the user clicks because of call a function not pass 
+        props.onChecked(props.id);      
       }}
     >
-      <li style={{ textDecoration: isDone ? "line-through" : "none" }}>
-        {props.text}
-      </li>
+      <li>{props.text}</li>
     </div>
   );
 }
