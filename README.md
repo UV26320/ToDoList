@@ -3,8 +3,6 @@
 
 This is a simple Todo List web application built using React. It allows users to add, delete, and manage their tasks in an organized way.
 
-![Todo List Screenshot](screenshot.png)
-
 ## Features
 
 - Add new tasks with a title and optional description.
